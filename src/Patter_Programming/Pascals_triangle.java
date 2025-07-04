@@ -19,9 +19,13 @@ public class Pascals_triangle
                 System.out.print(" ");
             }
 
-            int number = 1;  // ✅ Reset for each row
+            //int number = 0;  // ✅ Reset for each row
 
-            for (int k = 1; k <= i; k++) {
+            for (int k = 1; k <= i; k++)
+            {
+               int  number = 1;
+
+
                 System.out.print(number + " ");
                 number = number * (i - k) / k;
             }
